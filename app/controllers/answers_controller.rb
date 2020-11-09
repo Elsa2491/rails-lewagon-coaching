@@ -1,6 +1,7 @@
 class AnswersController < ApplicationController
   def answer
     ask = params[:question]
+    # raise
     if ask == 'I am going to work right now!'
       @answer = 'Great!'
     elsif ask.include?('?')
